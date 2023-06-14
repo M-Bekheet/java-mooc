@@ -15,6 +15,32 @@ public class Money {
         this.cents = cents;
     }
 
+    public Money plus(Money addition) {
+        Money newMoney = new Money(euros + addition.euros, cents + addition.cents);
+        return newMoney;
+    }
+
+    public boolean lessThan(Money compared) {
+        if (this.euros > compared.euros)
+            return false;
+        if (this.euros == compared.euros && (this.cents > compared.cents))
+            return false;
+        return true;
+    }
+
+    public Money minus(Money decreaser) {
+        double totalA = euros * 100 + cents;
+        double totalB = decreaser.euros * 100 + decreaser.cents;
+        int newEuros = (int) ((totalA - totalB) / 100);
+        double newCents = (totalA - totalB - newEuros * 100);
+        if (newEuros < 0)
+            newEuros = 0;
+        if (newCents < 0)
+            newCents = 0;
+        Money money = new Money((int) newEuros, (int) newCents);
+        return money;
+    }
+
     public int euros() {
         return this.euros;
     }
