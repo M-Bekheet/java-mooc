@@ -18,5 +18,17 @@ public class SimpleCollection {
     public ArrayList<String> getElements() {
         return this.elements;
     }
-    
+
+    public String toString() {
+        if (this.elements.size() == 0)
+            return "The collection " + name + " is empty.";
+        String printString = "The collection " + name + " has "
+                + (elements.size() > 1 ? elements.size() + " elements:" : "1 element:");
+
+        for (String element : elements)
+            printString += "\n" + element;
+
+        return printString;
+    }
+
 }
