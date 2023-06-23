@@ -3,9 +3,9 @@ My solutions of University of Helsinki [Java MOOC](https://java-programming.mooc
 
 
 ## Overview:
-- Course Parts: 14
-- Solved Parts: 3/14 
-
+- Course Parts: 7
+- Status: Done
+- My Certificate of Course Completion: https://certificates.mooc.fi/validate/9v750unrvhh
 
 ## To test your solutions:
 - You can follow their guide [here](https://www.mooc.fi/en/installation/netbeans/). 
