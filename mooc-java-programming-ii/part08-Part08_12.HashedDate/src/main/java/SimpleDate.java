@@ -16,6 +16,16 @@ public class SimpleDate {
         return this.day + "." + this.month + "." + this.year;
     }
 
+    @Override
+    public int hashCode() {
+        int prime = 10;
+        int result = 1;
+        result = prime * result + year;
+        result = prime * result + month;
+        result = prime * result + day;
+        return result;
+    }
+
     public boolean earlier(SimpleDate other) {
         if (this.year < other.year) {
             return true;
