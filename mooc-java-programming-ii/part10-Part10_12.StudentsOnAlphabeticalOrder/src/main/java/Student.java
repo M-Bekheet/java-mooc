@@ -1,20 +1,24 @@
 
+public class Student implements Comparable<Student> {
 
-public class Student {
+  private String name;
 
-    private String name;
+  public Student(String name) {
+    this.name = name;
+  }
 
-    public Student(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getName() {
-        return name;
-    }
+  @Override
+  public int compareTo(Student other) {
+    return this.getName().compareToIgnoreCase(other.getName());
+  }
 
-    @Override
-    public String toString() {
-        return name;
-    }
+  @Override
+  public String toString() {
+    return name;
+  }
 
 }
