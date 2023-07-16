@@ -6,7 +6,10 @@ public class Person {
     private int age;
 
     public Person(String name, int age) {
-
+        boolean invalidName = name == null || name.isEmpty() || name.length() > 40;
+        boolean invalidAge = !(age >= 0 && age <= 120);
+        if (invalidName || invalidAge)
+            throw new IllegalArgumentException();
         this.name = name;
         this.age = age;
     }
