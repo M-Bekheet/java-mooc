@@ -6,7 +6,7 @@ My Certificate of (Course I) Completion: https://certificates.mooc.fi/validate/9
 ## Overview:
 - Course I: DONE
 - Course II: IN PROGRESS:
-  - Solved Parts: - / 7   
+  - Solved Parts: 5 / 7   
 
 
 ## To test your solutions:
