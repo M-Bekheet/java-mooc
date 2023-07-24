@@ -10,32 +10,32 @@ import javafx.stage.Stage;
 
 public class UnfairAdvertisementApplication extends Application {
 
-    @Override
-    public void start(Stage window) {
-        CategoryAxis xAxis = new CategoryAxis();
-        NumberAxis yAxis = new NumberAxis(77.0, 77.5, 0.1);
-        yAxis.setTickLabelsVisible(false);
-        yAxis.setLabel("Faster and Better!");
+  @Override
+  public void start(Stage window) {
+    CategoryAxis xAxis = new CategoryAxis();
+    NumberAxis yAxis = new NumberAxis(75, 80, 0.1);
+    yAxis.setTickLabelsVisible(false);
+    yAxis.setLabel("Faster and Better!");
 
-        BarChart<String, Number> barChart = new BarChart<>(xAxis, yAxis);
+    BarChart<String, Number> barChart = new BarChart<>(xAxis, yAxis);
 
-        barChart.setTitle("Internet speed");
-        barChart.setLegendVisible(false);
+    barChart.setTitle("Internet speed");
+    barChart.setLegendVisible(false);
 
-        XYChart.Series speeds = new XYChart.Series();
-        speeds.getData().add(new XYChart.Data("NDA", 77.4));
-        speeds.getData().add(new XYChart.Data("Fastie", 77.2));
-        speeds.getData().add(new XYChart.Data("SuperNet", 77.1));
-        speeds.getData().add(new XYChart.Data("Meganet", 77.1));
+    XYChart.Series speeds = new XYChart.Series();
+    speeds.getData().add(new XYChart.Data("NDA", 77.4));
+    speeds.getData().add(new XYChart.Data("Fastie", 77.2));
+    speeds.getData().add(new XYChart.Data("SuperNet", 77.1));
+    speeds.getData().add(new XYChart.Data("Meganet", 77.1));
 
-        barChart.getData().add(speeds);
-        Scene view = new Scene(barChart, 400, 300);
-        window.setScene(view);
-        window.show();
-    }
+    barChart.getData().add(speeds);
+    Scene view = new Scene(barChart, 400, 300);
+    window.setScene(view);
+    window.show();
+  }
 
-    public static void main(String[] args) {
-        launch(UnfairAdvertisementApplication.class);
-    }
+  public static void main(String[] args) {
+    launch(UnfairAdvertisementApplication.class);
+  }
 
 }
