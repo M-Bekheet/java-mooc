@@ -1,12 +1,13 @@
 # Java-MOOC
 My solutions of University of Helsinki [Java MOOC](https://java-programming.mooc.fi/)
 
-My Certificate of (Course I) Completion: https://certificates.mooc.fi/validate/9v750unrvhh
+My Certificate of (Course I) Completion: https://certificates.mooc.fi/validate/9v750unrvhh <br/>
+My Certificate of (Course II) Completion: https://certificates.mooc.fi/validate/oqa9dudxhgi
+
 
 ## Overview:
 - Course I: DONE
-- Course II: IN PROGRESS:
-  - Solved Parts: 6 / 7   
+- Course II: DONE  
 
 
 ## To test your solutions:
